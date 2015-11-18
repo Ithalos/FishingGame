@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     Animator anim;
     bool canFish;
+    Vector3 moveDirection;
+    Rigidbody playerRigidbody;
 
     float timerToCatch;
     float timeBeforeBite;
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         canFish = fishingZone.GetComponent<FishingZone>();
+        playerRigidbody = GetComponent<Rigidbody>();
         timerToCatch = 0f;
         timeBeforeBite = 0f;
         isFishing = false;
@@ -35,22 +38,26 @@ public class PlayerController : MonoBehaviour
     {
         timerToCatch += Time.deltaTime;
 
+        // Player attempts to start fishing when F is pressed. Useless comment is useless.
         if (Input.GetKeyDown(KeyCode.F))
         {
             FishCheck();
         }
 
+        // Player movement cancels fishing.
+        if ((moveDirection.x != 0 || moveDirection.z != 0) && isFishing)
+        {
+            Debug.Log("You have moved. Fishing was cancelled.");
+            isFishing = false;
+        }
 
         // FISHING TIMER
         if (timerToCatch > timeBeforeBite && isFishing)
         {
-            Debug.Log("You have caught a fish!");
-            Debug.Log("You have caught a fish!");
-            Debug.Log("You have caught a fish!");
-            Debug.Log("You have caught a fish!");
-            Debug.Log("You have caught a fish!");
-            Debug.Log("You have caught a fish!");
 
+
+            // Player catches fish.
+            Debug.Log("You have caught a fish!");
             isFishing = false;
         }
     }
@@ -59,7 +66,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Moving player.
-        Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = Camera.main.transform.TransformDirection(moveDirection);
         moveDirection.y = 0;
         player.MovePosition(player.position + moveDirection * speed * Time.deltaTime);
