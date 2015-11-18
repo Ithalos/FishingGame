@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 // Make sure some components cannot be accidentally deleted.
 [RequireComponent(typeof(Rigidbody))]
@@ -11,18 +12,49 @@ public class PlayerController : MonoBehaviour
     Rigidbody player;
     public float speed;
     Animator anim;
+    bool canFish;
+
+    float timerToCatch;
+    float timeBeforeBite;
+    bool isFishing;
+
+    public GameObject fishingZone;
 
     void Start()
     {
         // Fetching gameobject components to variables.
         player = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        canFish = fishingZone.GetComponent<FishingZone>();
+        timerToCatch = 0f;
+        timeBeforeBite = 0f;
+        isFishing = false;
     }
 
     void Update()
     {
+        timerToCatch += Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            FishCheck();
+        }
+
+
+        // FISHING TIMER
+        if (timerToCatch > timeBeforeBite && isFishing)
+        {
+            Debug.Log("You have caught a fish!");
+            Debug.Log("You have caught a fish!");
+            Debug.Log("You have caught a fish!");
+            Debug.Log("You have caught a fish!");
+            Debug.Log("You have caught a fish!");
+            Debug.Log("You have caught a fish!");
+
+            isFishing = false;
+        }
     }
+
 
     void FixedUpdate()
     {
@@ -52,5 +84,32 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
 
+    }
+
+
+    void FishCheck()
+    {
+        canFish = fishingZone.GetComponent<FishingZone>().PlayerCanFish();
+
+        if (canFish)
+        {
+            Fish();
+            Debug.Log("You are fishing! :)");
+        }
+        else
+        {
+            Debug.Log("You cannot fish here, stupid!");
+        }
+    }
+
+    void Fish()
+    {
+        timerToCatch = 0f;
+        timeBeforeBite = 0f;
+        System.Random random = new System.Random();
+        timeBeforeBite = random.Next(10) + 5;
+
+        Debug.Log(timeBeforeBite);
+        isFishing = true;
     }
 }
