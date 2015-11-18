@@ -35,6 +35,11 @@ public class Inventory : MonoBehaviour
 
         AddItem(0);
         AddItem(1);
+        AddItem(1);
+        AddItem(1);
+        AddItem(1);
+        AddItem(1);
+        AddItem(1);
 
         Debug.Log(items[1].Title);
     }
@@ -42,19 +47,49 @@ public class Inventory : MonoBehaviour
     public void AddItem(int id)
     {
         Item itemToAdd = database.FetchItemByID(id);
-        for (int i = 0; i < items.Count; i++)
+        if (itemToAdd.Stackable && CheckForItemInInventory(itemToAdd))
         {
-            if (items[i].ID == -1)
+            for (int i = 0; i < items.Count; i++)
             {
-                items[i] = itemToAdd;
-                GameObject itemObj = Instantiate(inventoryItem);
-                itemObj.transform.SetParent(slots[i].transform);
-                itemObj.transform.position = Vector2.zero;
-                itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
-                itemObj.name = itemToAdd.Title;
-                slots[i].name = "Slot " + i + " (" + itemToAdd.Title + ")";
-                break;
+                if (items[i].ID == id)
+                {
+                    ItemData data = slots[i].transform.GetChild(0).GetComponent<ItemData>();
+                    data.amount++;
+                    data.transform.GetChild(0).GetComponent<Text>().text = data.amount.ToString();
+                    break;
+                }
+            }
+
+        }
+        else
+        {
+            for (int i = 0; i < items.Count; i++)
+            {
+                if (items[i].ID == -1)
+                {
+                    items[i] = itemToAdd;
+                    GameObject itemObj = Instantiate(inventoryItem);
+                    itemObj.transform.SetParent(slots[i].transform);
+                    itemObj.transform.position = Vector2.zero;
+                    itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
+                    itemObj.name = itemToAdd.Title;
+                    slots[i].name = "Slot " + i + " (" + itemToAdd.Title + ")";
+                    break;
+                }
             }
         }
+    }
+
+    bool CheckForItemInInventory(Item item)
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].ID == item.ID)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
