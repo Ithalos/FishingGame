@@ -12,7 +12,8 @@
 	"description": "Gloves made of steel.",
 	"stackable": false,
 	"rarity": 2,
-	"slug": "armor_gloves_steel"
+	"slug": "armor_gloves_steel",
+	"type": "armor"
    },
 
    {
@@ -28,6 +29,24 @@
 	"description": "It's a stick that's pretty great.",
 	"stackable": true,
 	"rarity": 6,
-	"slug": "weapon_sword_silver"
+	"slug": "weapon_sword_silver",
+	"type": "weapon"
+   },
+
+      {
+     "id": 2,
+	 "title": "Salmon",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A raw salmon.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "weapon_sword_silver",
+	"type": "fish"
    }
 ]

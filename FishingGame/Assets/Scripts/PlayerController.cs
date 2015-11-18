@@ -14,13 +14,13 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     bool canFish;
     Vector3 moveDirection;
-    Rigidbody playerRigidbody;
 
     float timerToCatch;
     float timeBeforeBite;
     bool isFishing;
 
     public GameObject fishingZone;
+    public Inventory inventory;
 
     void Start()
     {
@@ -28,10 +28,11 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         canFish = fishingZone.GetComponent<FishingZone>();
-        playerRigidbody = GetComponent<Rigidbody>();
         timerToCatch = 0f;
         timeBeforeBite = 0f;
         isFishing = false;
+
+        
     }
 
     void Update()
@@ -54,11 +55,10 @@ public class PlayerController : MonoBehaviour
         // FISHING TIMER
         if (timerToCatch > timeBeforeBite && isFishing)
         {
-
-
             // Player catches fish.
             Debug.Log("You have caught a fish!");
             isFishing = false;
+            inventory.AddItem(2);
         }
     }
 
@@ -109,6 +109,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    // Weird stupid fishing code that works for some reason.
     void Fish()
     {
         timerToCatch = 0f;

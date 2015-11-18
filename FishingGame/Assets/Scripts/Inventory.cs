@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public List<GameObject> slots = new List<GameObject>();
 
+
     void Start()
     {
         database = GetComponent<ItemDatabase>();
@@ -33,6 +34,7 @@ public class Inventory : MonoBehaviour
             slots[i].name = "Slot " + i;
         }
 
+        
         AddItem(0);
         AddItem(1);
         AddItem(1);
@@ -40,8 +42,12 @@ public class Inventory : MonoBehaviour
         AddItem(1);
         AddItem(1);
         AddItem(1);
+        AddItem(2);
+
 
         Debug.Log(items[1].Title);
+        Debug.Log(items[2].Type);
+
     }
 
     public void AddItem(int id)
