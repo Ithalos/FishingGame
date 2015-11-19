@@ -35,6 +35,7 @@ public class Inventory : MonoBehaviour
         }
 
         
+        /*
         AddItem(0);
         AddItem(1);
         AddItem(1);
@@ -43,7 +44,7 @@ public class Inventory : MonoBehaviour
         AddItem(1);
         AddItem(1);
         AddItem(2);
-
+        */
 
         Debug.Log(items[1].Title);
         Debug.Log(items[2].Type);
