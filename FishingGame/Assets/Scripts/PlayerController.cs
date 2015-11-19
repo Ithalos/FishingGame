@@ -116,7 +116,10 @@ public class PlayerController : MonoBehaviour
         timerToCatch = 0f;
         timeBeforeBite = 0f;
         System.Random random = new System.Random();
-        timeBeforeBite = random.Next(10) + 5;
+
+        // TESTING VALUE
+        timeBeforeBite = 3;
+        // timeBeforeBite = random.Next(10) + 5;
 
         Debug.Log(timeBeforeBite);
         isFishing = true;
