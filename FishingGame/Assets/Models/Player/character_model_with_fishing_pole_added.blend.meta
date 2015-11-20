@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe
+timeCreated: 1448055981
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: Head
+    100006: Lower_Arm_L
+    100008: Lower_Arm_R
+    100010: Lower_Leg_L
+    100012: Lower_Leg_R
+    100014: Player
+    100016: Stomach
+    100018: Torso
+    100020: Upper_Arm_L
+    100022: Upper_Arm_R
+    100024: Upper_Leg_L
+    100026: Upper_Leg_R
+    400000: Armature
+    400002: //RootNode
+    400004: Head
+    400006: Lower_Arm_L
+    400008: Lower_Arm_R
+    400010: Lower_Leg_L
+    400012: Lower_Leg_R
+    400014: Player
+    400016: Stomach
+    400018: Torso
+    400020: Upper_Arm_L
+    400022: Upper_Arm_R
+    400024: Upper_Leg_L
+    400026: Upper_Leg_R
+    4300000: Player
+    7400000: lt Take Take
+    7400002: Fishing
+    7400004: Walk_blocking
+    9500000: //RootNode
+    13700000: Player
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: lt Take Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Stomach
+        weight: 1
+      - path: Armature/Stomach/Torso
+        weight: 1
+      - path: Armature/Stomach/Torso/Head
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Armature/Upper_Arm_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Armature/Upper_Leg_R
+        weight: 1
+      - path: Armature/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Player
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fishing
+      takeName: Fishing_001
+      firstFrame: -1
+      lastFrame: 730
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Stomach
+        weight: 1
+      - path: Armature/Stomach/Torso
+        weight: 1
+      - path: Armature/Stomach/Torso/Head
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Armature/Upper_Arm_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Armature/Upper_Leg_R
+        weight: 1
+      - path: Armature/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Player
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_blocking
+      takeName: Walk_blocking
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Stomach
+        weight: 1
+      - path: Armature/Stomach/Torso
+        weight: 1
+      - path: Armature/Stomach/Torso/Head
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Torso/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/Stomach/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Armature/Upper_Arm_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Armature/Upper_Leg_R
+        weight: 1
+      - path: Armature/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Player
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

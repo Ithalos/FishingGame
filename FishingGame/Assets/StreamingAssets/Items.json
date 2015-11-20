@@ -1,0 +1,52 @@
+[
+   {
+     "id": 0,
+	 "title": "Steel Gloves",
+	 "value": 6,
+	 "stats":
+	    {
+		  "power": 1,
+		  "defence": 4,
+		  "vitality": 2
+		},
+	"description": "Gloves made of steel.",
+	"stackable": false,
+	"rarity": 2,
+	"slug": "armor_gloves_steel",
+	"type": "armor"
+   },
+
+   {
+     "id": 1,
+	 "title": "The Great Stick",
+	 "value": 543,
+	 "stats":
+	    {
+		  "power": 46,
+		  "defence": 2,
+		  "vitality": 54
+		},
+	"description": "It's a stick that's pretty great.",
+	"stackable": true,
+	"rarity": 6,
+	"slug": "weapon_sword_silver",
+	"type": "weapon"
+   },
+
+      {
+     "id": 2,
+	 "title": "Salmon",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A raw salmon.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "weapon_sword_silver",
+	"type": "fish"
+   }
+]
