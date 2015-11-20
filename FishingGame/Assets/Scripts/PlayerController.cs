@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("You have caught a fish!");
             isFishing = false;
             inventory.AddItem(2);
+            anim.SetBool("IsFishing", false);
         }
     }
 
@@ -85,6 +86,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             anim.SetBool("IsWalking", true);
+            anim.SetBool("IsFishing", false);
         }
         else
         {
@@ -125,5 +127,6 @@ public class PlayerController : MonoBehaviour
 
         Debug.Log(timeBeforeBite);
         isFishing = true;
+        anim.SetBool("IsFishing", true);
     }
 }
