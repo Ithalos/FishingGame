@@ -284,7 +284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
       propertyPath: m_Name
@@ -669,6 +669,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
   m_PrefabInternal: {fileID: 429189763}
+--- !u!4 &976486564 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
+  m_PrefabInternal: {fileID: 429189763}
 --- !u!114 &976486565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +687,7 @@ MonoBehaviour:
   speed: 6
   fishingZone: {fileID: 933011438}
   inventory: {fileID: 1714101235}
+  fishingPole: {fileID: 1166384126}
 --- !u!136 &976486566
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -711,6 +716,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!1 &1166384126 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+  m_PrefabInternal: {fileID: 1340028128}
 --- !u!1 &1275504088
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +806,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1001 &1340028128
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 976486564}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: .639999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.60000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: .393274486
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: .919421136
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+      propertyPath: m_Name
+      value: Fishing_Pole
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2b07f8053a0488842a5f8ead712cdabf, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1453363658
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +973,7 @@ MonoBehaviour:
   inventorySlot: {fileID: 177866, guid: 1335b3000da40cc41ab9cf01ccf4bc75, type: 2}
   inventoryItem: {fileID: 119178, guid: fa6b72de13f2e044d9e155ff24c93633, type: 2}
   slots: []
+  fishingPole: {fileID: 0}
 --- !u!1 &1766696062
 GameObject:
   m_ObjectHideFlags: 0

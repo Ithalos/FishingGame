@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public GameObject fishingZone;
     public Inventory inventory;
 
+    public GameObject fishingPole;
+
     void Start()
     {
         // Fetching gameobject components to variables.
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
         timeBeforeBite = 0f;
         isFishing = false;
 
-        
+        fishingPole.SetActive(false);
     }
 
     void Update()
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
             isFishing = false;
             inventory.AddItem(2);
             anim.SetBool("IsFishing", false);
+            fishingPole.SetActive(false);
         }
     }
 
@@ -87,6 +90,7 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("IsWalking", true);
             anim.SetBool("IsFishing", false);
+            fishingPole.SetActive(false);
         }
         else
         {
@@ -128,5 +132,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log(timeBeforeBite);
         isFishing = true;
         anim.SetBool("IsFishing", true);
+        fishingPole.SetActive(true);
     }
 }
