@@ -53,12 +53,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Load the level called "MainMenu". This is the main menu. Hard code is hard.
-    // Comment this out when MainMenu has actually been created.
     public void MainMenu()
     {
-        // Application.LoadLevel("MainMenu");
+        Application.LoadLevel("MainMenu");
     }
 
+
+    // Terminate the game program.
     public void Quit()
     {
         Application.Quit();
