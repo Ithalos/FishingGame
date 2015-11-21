@@ -17,9 +17,6 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public List<GameObject> slots = new List<GameObject>();
 
-    public GameObject fishingPole;
-
-
     void Start()
     {
         database = GetComponent<ItemDatabase>();
