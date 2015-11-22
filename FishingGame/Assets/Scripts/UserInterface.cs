@@ -9,7 +9,6 @@ public class UserInterface : MonoBehaviour
 	void Start () 
     {
         inventoryOpen = false;
-        inventoryUI.SetActive(false);
 	}
 	
 
