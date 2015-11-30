@@ -33,8 +33,11 @@ public class Inventory : MonoBehaviour
             slots[i].name = "Slot " + i;
         }
 
+        
         AddItem(3);
         AddItem(4);
+        
+        Debug.Log(items.Count);
     }
 
     public void AddItem(int id)
@@ -74,7 +77,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    bool CheckForItemInInventory(Item item)
+    public bool CheckForItemInInventory(Item item)
     {
         for (int i = 0; i < items.Count; i++)
         {
@@ -85,5 +88,10 @@ public class Inventory : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void DeleteItem(string item)
+    {
+
     }
 }
