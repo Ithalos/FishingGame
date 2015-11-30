@@ -33,7 +33,6 @@ public class Inventory : MonoBehaviour
             slots[i].name = "Slot " + i;
         }
 
-        
         AddItem(3);
         AddItem(4);
         
@@ -88,10 +87,5 @@ public class Inventory : MonoBehaviour
         }
 
         return false;
-    }
-
-    public void DeleteItem(string item)
-    {
-
     }
 }
