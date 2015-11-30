@@ -33,21 +33,8 @@ public class Inventory : MonoBehaviour
             slots[i].name = "Slot " + i;
         }
 
-        
-        /*
-        AddItem(0);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(2);
-        */
-
-        Debug.Log(items[1].Title);
-        Debug.Log(items[2].Type);
-
+        AddItem(3);
+        AddItem(4);
     }
 
     public void AddItem(int id)

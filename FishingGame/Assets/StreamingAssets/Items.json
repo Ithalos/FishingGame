@@ -48,5 +48,39 @@
 	"rarity": 1,
 	"slug": "weapon_sword_silver",
 	"type": "fish"
+   },
+   
+        {
+     "id": 3,
+	 "title": "Wooden Stick",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A simple wooden stick, usable for crafting.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "wooden_stick",
+	"type": "crafting"
+   },
+   
+           {
+     "id": 4,
+	 "title": "Match",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A single match.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "match",
+	"type": "crafting"
    }
 ]
