@@ -35,7 +35,9 @@ public class Inventory : MonoBehaviour
 
         AddItem(3);
         AddItem(4);
+
         
+
         Debug.Log(items.Count);
     }
 
