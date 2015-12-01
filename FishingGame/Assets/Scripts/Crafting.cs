@@ -17,8 +17,6 @@ public class Crafting : MonoBehaviour
         string stickName = "wooden_stick";
         string matchName = "match";
 
-
-
         bool haveStick = false;
         bool haveMatch = false; 
 
