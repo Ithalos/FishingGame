@@ -17,8 +17,24 @@ public class UserInterface : MonoBehaviour
     {
         if (Input.GetButtonDown("Inventory"))
         {
-            inventoryOpen = !inventoryOpen;
+            ToggleInventory();
         }
+
+        /*
+        if (inventoryOpen)
+        {
+            inventoryUI.SetActive(true);
+        }
+        else
+        {
+            inventoryUI.SetActive(false);
+        }
+        */
+	}
+
+    void ToggleInventory()
+    {
+        inventoryOpen = !inventoryOpen;
 
         if (inventoryOpen)
         {
@@ -28,6 +44,6 @@ public class UserInterface : MonoBehaviour
         {
             inventoryUI.SetActive(false);
         }
-	}
+    }
 
 }
