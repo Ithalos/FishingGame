@@ -19,18 +19,9 @@ public class UserInterface : MonoBehaviour
         {
             ToggleInventory();
         }
-
-        /*
-        if (inventoryOpen)
-        {
-            inventoryUI.SetActive(true);
-        }
-        else
-        {
-            inventoryUI.SetActive(false);
-        }
-        */
 	}
+
+
 
     void ToggleInventory()
     {
