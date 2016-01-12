@@ -38,4 +38,9 @@ public class Crafting : MonoBehaviour
             }
         }
     }
+
+    public void NoMaterialsError()
+    {
+
+    }
 }
