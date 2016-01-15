@@ -67,21 +67,7 @@ public class Crafting : MonoBehaviour
         }
     }
 
-
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            PlaceFireplace();
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            CookFish();
-        }
-    }
-
-    void CookFish()
+    public void CookFish()
     {
         if (fireplaceScript != null && fireplaceScript.playerNearFireplace)
         {

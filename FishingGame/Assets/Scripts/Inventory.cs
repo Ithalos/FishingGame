@@ -43,17 +43,17 @@ public class Inventory : MonoBehaviour
     // TESTING ONLY
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             RemoveItem("Match");
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             AddItem(3);
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             AddItem(4);
         }
