@@ -134,4 +134,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("IsFishing", true);
         fishingPole.SetActive(true);
     }
+
+
 }

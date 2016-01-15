@@ -7,6 +7,7 @@ public class Crafting : MonoBehaviour
     Inventory inventory;
 
     public GameObject fireplacePrefab;
+    Fireplace fireplaceScript;
 
     void Start()
     {
@@ -55,12 +56,17 @@ public class Crafting : MonoBehaviour
             {
                 // Change location of where the campfire is put down remains to be done.
                 inventory.RemoveItem("Fireplace");
-                Instantiate(fireplacePrefab, new Vector3(100f, 3f, 61f), Quaternion.identity);
+                //var fireplace = Instantiate(fireplacePrefab, new Vector3(100f, 3f, 61f), Quaternion.identity);
+                //fireplace.name = "Fireplace";
 
+                GameObject fireplace = GameObject.Instantiate<GameObject>(fireplacePrefab);
+                fireplaceScript = fireplace.GetComponent<Fireplace>();
+                fireplace.transform.position = new Vector3(100f, 3f, 61f);
                 break;
             }
         }
     }
+
 
 
     void Update()
@@ -68,6 +74,26 @@ public class Crafting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             PlaceFireplace();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CookFish();
+        }
+    }
+
+    void CookFish()
+    {
+        if (fireplaceScript != null && fireplaceScript.playerNearFireplace)
+        {
+            for (int i = 0; i < inventory.slots.Count; i++)
+            {
+                if (inventory.slots[i].name == "Raw Salmon")
+                {
+                    inventory.RemoveItem("Raw Salmon");
+                    inventory.AddItem(7);
+                    break;
+                }
+            }
         }
     }
 }
