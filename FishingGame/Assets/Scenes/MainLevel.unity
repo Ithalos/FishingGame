@@ -928,7 +928,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5c2b66e1ec1c5f04aa9a8a05c631b8fe, type: 3}
       propertyPath: m_Name
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: ee4649cbfee12f84fa8821cbf7792168, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b40f9b33bc8cf41428c263c7bbea0d57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: ee4649cbfee12f84fa8821cbf7792168, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1e1dba9ece233a40b1cb2ad3b05f340, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: ee4649cbfee12f84fa8821cbf7792168, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49eefc45ea1b8ff40a3edeb84341bbee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
