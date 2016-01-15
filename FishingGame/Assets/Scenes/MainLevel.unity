@@ -2456,6 +2456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryObject: {fileID: 1714101232}
+  fireplacePrefab: {fileID: 110712, guid: 1d5d782384beaf24284eee6afbf9c97f, type: 2}
 --- !u!4 &1746875405
 Transform:
   m_ObjectHideFlags: 0

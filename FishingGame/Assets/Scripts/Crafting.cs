@@ -5,7 +5,8 @@ public class Crafting : MonoBehaviour
 {
     public GameObject inventoryObject;
     Inventory inventory;
-    
+
+    public GameObject fireplacePrefab;
 
     void Start()
     {
@@ -44,5 +45,27 @@ public class Crafting : MonoBehaviour
     public void NoMaterialsError()
     {
 
+    }
+
+    public void PlaceFireplace()
+    {
+        for (int i = 0; i < inventory.slots.Count; i++)
+        {
+            if (inventory.slots[i].name == "Fireplace")
+            {
+                // Change location of where the campfire is put down remains to be done.
+                inventory.RemoveItem("Fireplace");
+                Instantiate(fireplacePrefab, new Vector3(100f, 3f, 61f), Quaternion.identity);
+            }
+        }
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            PlaceFireplace();
+        }
     }
 }
