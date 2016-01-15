@@ -8,8 +8,8 @@ public class UserInterface : MonoBehaviour
 
 	void Start () 
     {
-        // SET THIS TO FALSE ONCE FEATURE-CRAFTING IS COMPLETE!
-        inventoryOpen = true;
+        inventoryOpen = false;
+        inventoryUI.SetActive(false);
 	}
 	
 

@@ -2192,6 +2192,7 @@ GameObject:
   - 81: {fileID: 1275504089}
   - 114: {fileID: 1275504094}
   - 114: {fileID: 1275504095}
+  - 114: {fileID: 1275504096}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2290,6 +2291,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 50490402}
+--- !u!114 &1275504096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1275504088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b362de8bb71674ba7c99fa8a1f4fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  craftingUI: {fileID: 18918414}
 --- !u!1 &1311578608
 GameObject:
   m_ObjectHideFlags: 0
