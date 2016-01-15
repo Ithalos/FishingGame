@@ -8,6 +8,7 @@ public class Crafting : MonoBehaviour
 
     public GameObject fireplacePrefab;
     Fireplace fireplaceScript;
+    public GameObject player;
 
     void Start()
     {
@@ -54,14 +55,15 @@ public class Crafting : MonoBehaviour
         {
             if (inventory.slots[i].name == "Fireplace")
             {
-                // Change location of where the campfire is put down remains to be done.
                 inventory.RemoveItem("Fireplace");
-                //var fireplace = Instantiate(fireplacePrefab, new Vector3(100f, 3f, 61f), Quaternion.identity);
-                //fireplace.name = "Fireplace";
-
                 GameObject fireplace = GameObject.Instantiate<GameObject>(fireplacePrefab);
                 fireplaceScript = fireplace.GetComponent<Fireplace>();
-                fireplace.transform.position = new Vector3(100f, 3f, 61f);
+
+                Vector3 location = player.GetComponent<Transform>().position;
+                Vector3 fireplaceOffset = new Vector3(0f, 0.25f, 0f);
+                fireplace.transform.position = location + fireplaceOffset;
+
+                // fireplace.transform.position = new Vector3(100f, 3f, 61f);
                 break;
             }
         }
