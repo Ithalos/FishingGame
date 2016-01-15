@@ -45,7 +45,7 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            UpdateInventory("Match");
+            RemoveItem("Match");
         }
 
         if (Input.GetKeyDown(KeyCode.A))
@@ -112,7 +112,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public void UpdateInventory(string itemToRemove)
+    public void RemoveItem(string itemToRemove)
     {
         for (int i = 0; i < slots.Count; i++)
         {
@@ -123,6 +123,7 @@ public class Inventory : MonoBehaviour
                 Destroy(inventoryChild);
 
                 // items[i].ID = -1;
+                items[i] = new Item();
                 slots[i].name = "Empty";
 
                 for (int a = 0; a < 10; a++)

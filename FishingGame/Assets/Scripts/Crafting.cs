@@ -32,6 +32,8 @@ public class Crafting : MonoBehaviour
             }
             if (haveStick && haveMatch)
             {
+                inventory.RemoveItem("Wooden Stick");
+                inventory.RemoveItem("Match");
                 inventory.AddItem(0);
                 break;
             }   
