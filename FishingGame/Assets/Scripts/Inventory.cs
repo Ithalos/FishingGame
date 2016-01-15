@@ -30,25 +30,36 @@ public class Inventory : MonoBehaviour
             items.Add(new Item());
             slots.Add(Instantiate(inventorySlot));
             slots[i].transform.SetParent(slotPanel.transform);
-            slots[i].name = "Slot " + i;
+            //slots[i].name = "Slot " + i;
         }
 
-        
-        /*
-        AddItem(0);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(1);
-        AddItem(2);
-        */
+        AddItem(3);
+        AddItem(4);
 
-        Debug.Log(items[1].Title);
-        Debug.Log(items[2].Type);
+        Debug.Log(items.Count);
+    }
+
+
+    // TESTING ONLY
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RemoveItem("Match");
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            AddItem(3);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            AddItem(4);
+        }
 
     }
+    // TESTING ONLY END
 
     public void AddItem(int id)
     {
@@ -79,7 +90,8 @@ public class Inventory : MonoBehaviour
                     itemObj.transform.localPosition = Vector2.zero;
                     itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                     itemObj.name = itemToAdd.Title;
-                    slots[i].name = "Slot " + i + " (" + itemToAdd.Title + ")";
+                    // slots[i].name = "Slot " + i + " (" + itemToAdd.Title + ")";
+                    slots[i].name = itemToAdd.Title;
                     Debug.Log(itemObj.transform.parent.name);
                     break;
                 }
@@ -87,7 +99,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    bool CheckForItemInInventory(Item item)
+    public bool CheckForItemInInventory(Item item)
     {
         for (int i = 0; i < items.Count; i++)
         {
@@ -98,5 +110,31 @@ public class Inventory : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void RemoveItem(string itemToRemove)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].name == itemToRemove)
+            {
+
+                GameObject inventoryChild = slots[i].transform.FindChild(itemToRemove).gameObject;
+                Destroy(inventoryChild);
+
+                // items[i].ID = -1;
+                items[i] = new Item();
+                slots[i].name = "Empty";
+
+                for (int a = 0; a < 10; a++)
+                {
+                    Debug.Log(items[a].ID);
+                }
+
+                break;
+
+
+            }
+        }
     }
 }
