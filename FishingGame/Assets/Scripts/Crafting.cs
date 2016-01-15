@@ -56,6 +56,8 @@ public class Crafting : MonoBehaviour
                 // Change location of where the campfire is put down remains to be done.
                 inventory.RemoveItem("Fireplace");
                 Instantiate(fireplacePrefab, new Vector3(100f, 3f, 61f), Quaternion.identity);
+
+                break;
             }
         }
     }
