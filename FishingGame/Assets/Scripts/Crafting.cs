@@ -30,12 +30,12 @@ public class Crafting : MonoBehaviour
             {
                 haveMatch = true;
             }
-
             if (haveStick && haveMatch)
             {
                 inventory.AddItem(0);
                 break;
-            }
+            }   
+
         }
     }
 
