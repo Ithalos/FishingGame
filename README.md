@@ -14,42 +14,42 @@ Go to Edit > Project Settings > Editor
   
 Updated 16/01/2016
 
-Features: **Completed** 
-	**Player:**
-			Very basic human model
-			Very basic animations:
-				Idle
-				Walking
-				Fishing
-	
-	**Crafting & Gathering:**			
-			Fishing:
-				Player can fish up raw salmon
+Features: **Completed**    
+**Player:**
+ * Very basic human model  
+ * Very basic animations:  
+ * Idle  
+ * Walking  
+ * Fishing  
+
+**Crafting & Gathering:**  		
+Fishing:  
+ * Player can fish up raw salmon  
 				
-			Crafting:
-				Wooden Stick + Match = Fireplace (deployable)
+Crafting:  
+ * Wooden Stick + Match = Fireplace (deployable)  
 				
-			Cooking:
-				Raw Fish + Fireplace = Cooked Fish
+Cooking:  
+ * Raw Fish + Fireplace = Cooked Fish  
 				
-	**Environment:**
-			Tiny world
-			Fishable body of water
+**Environment:**  
+			Tiny world  
+			Fishable body of water  
 			
 			
 Features: **Stretch Goals**
 	**Crafting & Gathering:**
-			Crafting:
-				Twigs x 3 = Improvised Rope
-				Branch + Knife = Fishing Pole
-				Improvised Rope + Fishing Pole + Metal = Fishing Rod (functional)
+Crafting:
+Twigs x 3 = Improvised Rope
+Branch + Knife = Fishing Pole
+Improvised Rope + Fishing Pole + Metal = Fishing Rod (functional)
 			
-			Gathering:
-				Twigs
-				Branches
-				Metal
+Gathering:
+ * Twigs
+ * Branches
+ * Metal
 	
 	
-	**Environment:**
-			Trees
-			Ground foliage
+**Environment:**
+ * Trees
+ * Ground foliage
