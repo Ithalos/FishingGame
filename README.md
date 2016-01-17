@@ -13,8 +13,11 @@ Go to Edit > Project Settings > Editor
   
   
 Updated 16/01/2016
-
-Features: **Completed**    
+</br>
+</br>
+</br>
+Features: **Completed**   
+</br>
 **Player:**
  * Very basic human model  
  * Very basic animations:  
@@ -23,12 +26,10 @@ Features: **Completed**
  * Fishing  
 
 **Crafting & Gathering:**  		
-Fishing:  
+  Fishing:  
  * Player can fish up raw salmon  
-				
 Crafting:  
  * Wooden Stick + Match = Fireplace (deployable)  
-				
 Cooking:  
  * Raw Fish + Fireplace = Cooked Fish  
 				
@@ -36,7 +37,7 @@ Cooking:
 			Tiny world  
 			Fishable body of water  
 			
-			
+</br></br>
 Features: **Stretch Goals**
 	**Crafting & Gathering:**
 Crafting:
