@@ -25,21 +25,22 @@ Features: **Completed**
  * Walking  
  * Fishing  
 
-**Crafting & Gathering:**  		
-  Fishing:  
- * Player can fish up raw salmon  
-Crafting:  
- * Wooden Stick + Match = Fireplace (deployable)  
-Cooking:  
- * Raw Fish + Fireplace = Cooked Fish  
+**Crafting & Gathering:**
+ * Fishing:
+Player can fish up raw salmon
+Crafting:
+Wooden Stick + Match = Fireplace (deployable)
+Cooking:
+Raw Fish + Fireplace = Cooked Fish
 				
 **Environment:**  
-			Tiny world  
-			Fishable body of water  
+ * Tiny world  
+ * Fishable body of water  
 			
 </br></br>
-Features: **Stretch Goals**
-	**Crafting & Gathering:**
+Features: **Stretch Goals**  
+</br>
+**Crafting & Gathering:**  
 Crafting:
 Twigs x 3 = Improvised Rope
 Branch + Knife = Fishing Pole
