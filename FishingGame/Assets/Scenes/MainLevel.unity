@@ -3044,6 +3044,7 @@ MonoBehaviour:
   food: 0
   water: 0
   health: 0
+  healthRegenRate: .150000006
   FishingZone: {fileID: 933011439}
   Inventory: {fileID: 1714101235}
 --- !u!1 &1086588625

@@ -18,6 +18,7 @@ public class PlayerNeeds : MonoBehaviour
     public float food;
     public float water;
     public float health;
+    public float healthRegenRate = 0.15f;
 
     public FishingZone FishingZone;
     bool nearWater = false;
@@ -43,6 +44,8 @@ public class PlayerNeeds : MonoBehaviour
         food -= foodDecayRate;
         water -= waterDecayRate;
 
+
+        // Decay of health
         if (food < 0)
         {
             health -= 0.1f;
@@ -56,6 +59,17 @@ public class PlayerNeeds : MonoBehaviour
         if (food < 0 && water < 0)
         {
             health -= 0.2f;
+        }
+
+        // Health regeneration
+        if (food > 80 && water > 40)
+        {
+            health += healthRegenRate;
+
+            if (health > maxHealth)
+            {
+                health = maxHealth;
+            }
         }
     }
 
