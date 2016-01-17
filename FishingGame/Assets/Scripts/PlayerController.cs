@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
             // Player catches fish.
             Debug.Log("You have caught a fish!");
             isFishing = false;
-            inventory.AddItem(2);
+            inventory.AddItem(6);
             anim.SetBool("IsFishing", false);
             fishingPole.SetActive(false);
         }
@@ -134,4 +134,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("IsFishing", true);
         fishingPole.SetActive(true);
     }
+
+
 }

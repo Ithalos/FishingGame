@@ -1,5 +1,23 @@
 [
    {
+     "id": -1,
+	 "title": "empty",
+	 "value": 0,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "0",
+	"stackable": false,
+	"rarity": 0,
+	"slug": "empty",
+	"type": ""
+   },
+   
+   
+   {
      "id": 0,
 	 "title": "Steel Gloves",
 	 "value": 6,
@@ -48,5 +66,90 @@
 	"rarity": 1,
 	"slug": "weapon_sword_silver",
 	"type": "fish"
+   },
+   
+        {
+     "id": 3,
+	 "title": "Wooden Stick",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A simple wooden stick, usable for crafting.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "wooden_stick",
+	"type": "crafting"
+   },
+   
+           {
+     "id": 4,
+	 "title": "Match",
+	 "value": 99,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A single match.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "match",
+	"type": "crafting"
+   },
+   
+              {
+     "id": 5,
+	 "title": "Fireplace",
+	 "value": 5,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A deployable fireplace to cook meat on.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "fireplace",
+	"type": "deployable"
+   },
+   
+                 {
+     "id": 6,
+	 "title": "Raw Salmon",
+	 "value": 1,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A raw uncooked salmon.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "salmon_raw",
+	"type": "food"
+   },
+   
+                    {
+     "id": 7,
+	 "title": "Cooked Salmon",
+	 "value": 1,
+	 "stats":
+	    {
+		  "power": 0,
+		  "defence": 0,
+		  "vitality": 0
+		},
+	"description": "A cooked salmon.",
+	"stackable": false,
+	"rarity": 1,
+	"slug": "salmon_cooked",
+	"type": "food"
    }
 ]
