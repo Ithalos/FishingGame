@@ -21,15 +21,17 @@ Features: **Completed**
 **Player:**
  * Very basic human model  
  * Very basic animations:  
- * Idle  
- * Walking  
- * Fishing  
+Idle  
+Walking  
+Fishing  
 
 **Crafting & Gathering:**
  * Fishing:  
- Player can fish up raw salmon
+ Player can fish up raw salmon  
+
  * Crafting:  
-Wooden Stick + Match = Fireplace (deployable)
+Wooden Stick + Match = Fireplace (deployable)  
+
  * Cooking:  
 Raw Fish + Fireplace = Cooked Fish
 				
