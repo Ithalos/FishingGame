@@ -26,11 +26,11 @@ Features: **Completed**
  * Fishing  
 
 **Crafting & Gathering:**
- * Fishing:
-Player can fish up raw salmon
-Crafting:
+ * Fishing:  
+ Player can fish up raw salmon
+ * Crafting:  
 Wooden Stick + Match = Fireplace (deployable)
-Cooking:
+ * Cooking:  
 Raw Fish + Fireplace = Cooked Fish
 				
 **Environment:**  
@@ -41,15 +41,15 @@ Raw Fish + Fireplace = Cooked Fish
 Features: **Stretch Goals**  
 </br>
 **Crafting & Gathering:**  
-Crafting:
-Twigs x 3 = Improvised Rope
-Branch + Knife = Fishing Pole
-Improvised Rope + Fishing Pole + Metal = Fishing Rod (functional)
+ * Crafting:  
+Twigs x 3 = Improvised Rope  
+Branch + Knife = Fishing Pole  
+Improvised Rope + Fishing Pole + Metal = Fishing Rod (functional)  
 			
-Gathering:
- * Twigs
- * Branches
- * Metal
+ * Gathering:  
+Twigs  
+Branches  
+Metal
 	
 	
 **Environment:**
