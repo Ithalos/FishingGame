@@ -112,6 +112,19 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    public bool CheckForItemInInventoryByName(string item)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].name == item)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public void RemoveItem(string itemToRemove)
     {
         for (int i = 0; i < slots.Count; i++)
