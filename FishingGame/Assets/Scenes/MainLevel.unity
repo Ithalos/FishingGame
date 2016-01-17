@@ -3039,12 +3039,12 @@ MonoBehaviour:
   maxFood: 100
   maxWater: 50
   maxHealth: 100
-  foodDecayRate: .0299999993
-  waterDecayRate: .0299999993
+  foodDecayRate: .0149999997
+  waterDecayRate: .0149999997
   food: 0
   water: 0
   health: 0
-  healthRegenRate: .150000006
+  healthRegenRate: .0500000007
   FishingZone: {fileID: 933011439}
   Inventory: {fileID: 1714101235}
 --- !u!1 &1086588625
@@ -4120,7 +4120,7 @@ Canvas:
   m_GameObject: {fileID: 1679941347}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1275504092}
   m_PlaneDistance: 1
   m_PixelPerfect: 0
