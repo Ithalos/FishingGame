@@ -12,11 +12,11 @@ Go to Edit > Project Settings > Editor
 
   
   
-Updated 16/01/2016
+
 </br>
 </br>
 </br>
-Features: **Completed**   
+Features: **Completed** (updated 16/01/2016)    
 </br>
 **Player:**
  * Very basic human model  
