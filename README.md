@@ -25,6 +25,11 @@ Idle
 Walking  
 Fishing  
 
+ * Needs  
+Food  
+Water  
+
+
 **Crafting & Gathering:**
  * Fishing:  
  Player can fish up raw salmon  
