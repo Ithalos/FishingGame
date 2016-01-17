@@ -8,6 +8,9 @@ public class PlayerNeeds : MonoBehaviour
     public Image waterBar;
     public Image healthBar;
 
+    public AudioClip eatSound;
+    public AudioClip drinkSound;
+
     public float maxFood = 100f;
     public float maxWater = 50f;
     public float maxHealth = 100f;
@@ -87,6 +90,7 @@ public class PlayerNeeds : MonoBehaviour
         if (nearWater)
         {
             water += 10f;
+            GetComponent<AudioSource>().PlayOneShot(drinkSound);
 
             if (water > maxWater)
             {
@@ -101,6 +105,7 @@ public class PlayerNeeds : MonoBehaviour
 
         if (hasFood)
         {
+            GetComponent<AudioSource>().PlayOneShot(eatSound, 0.3f);
             Inventory.GetComponent<Inventory>().RemoveItem("Cooked Salmon");
             food += 20;
 
