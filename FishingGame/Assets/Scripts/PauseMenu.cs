@@ -4,7 +4,8 @@ using System.Collections;
 public class PauseMenu : MonoBehaviour 
 {
     public GameObject pauseUI;
-    bool gameIsPaused;
+    public bool gameIsPaused;
+    public GameOver gameOver;
 
     void Start()
     {
@@ -31,8 +32,8 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        // Hide the pause menu & continue time.
-        if (!gameIsPaused)
+        // Hide the pause menu & continue time. This can only happen while the player's health is more than 0. It's not very efficient to check it every update like this, but whatever, suck my dick.
+        if (!gameIsPaused && !gameOver.GetComponent<GameOver>().gameIsOver)
         {
             pauseUI.SetActive(false);
             Time.timeScale = 1;
