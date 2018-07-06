@@ -43,22 +43,3 @@ Raw Fish + Fireplace = Cooked Fish
 **Environment:**  
  * Tiny world  
  * Fishable body of water  
-			
-</br></br>
-Features: **Stretch Goals**  
-</br>
-**Crafting & Gathering:**  
- * Crafting:  
-Twigs x 3 = Improvised Rope  
-Branch + Knife = Fishing Pole  
-Improvised Rope + Fishing Pole + Metal = Fishing Rod (functional)  
-			
- * Gathering:  
-Twigs  
-Branches  
-Metal
-	
-	
-**Environment:**
- * Trees
- * Ground foliage
